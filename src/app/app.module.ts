@@ -17,10 +17,7 @@ const appRoutes: Routes = [
   declarations: [AppComponent, WitzeComponent, LinksComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    RouterModule.forRoot(appRoutes),
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
     })

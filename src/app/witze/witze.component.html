@@ -1,5 +1,4 @@
-<p>
-  {{ activeJoke }}
-</p>
-<p *ngIf="isFromDatabase">From local database</p>
-<a routerLink="/">Get back to Homepage</a>
+<a routerLink="/">Zurück zur Homepage</a>
+<h3>Unser Witz des Tages:</h3>
+<h2>{{ activeJoke }}</h2>
+<h3 *ngIf="isFromDatabase">Daten stammen von der IndexDB.</h3>
